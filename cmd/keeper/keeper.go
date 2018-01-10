@@ -1737,4 +1737,6 @@ func keeper(c *cobra.Command, args []string) {
 	go p.Start(ctx)
 
 	<-end
+
+	lockFile.Close()
 }
